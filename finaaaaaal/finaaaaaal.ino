@@ -51,7 +51,6 @@ else{
   Serial.print(Distance); 
   }
   
-  
   for(int pos = 180 ; pos >= 0 ; pos--){  
   myServo.write(pos);
   delay(20);
@@ -63,11 +62,9 @@ else{
   
 }
 
-
 int Add_Distance(){ 
   digitalWrite(Trig, LOW); 
   delayMicroseconds(2);
-  
   digitalWrite(Trig, HIGH); 
   delayMicroseconds(20);
   digitalWrite(Trig, LOW);
